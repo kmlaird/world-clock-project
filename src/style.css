@@ -1,0 +1,63 @@
+/*outer container*/
+body {
+  margin: 60px auto;
+  padding: 10px;
+  background: center / contain repeat url("../images/clock-germany.jpeg");
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 7px outset rgb(53, 188, 191);
+  border-radius: 20px;
+  background-color: rgba(144, 246, 215, 0.9);
+  color: rgb(38, 56, 73);
+}
+
+/*time sections*/
+h1 {
+  text-align: center;
+  text-shadow: 4px 7px 10px rgba(19, 39, 67, 0.6);
+  color: rgb(19, 39, 67);
+}
+
+select {
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+/*city div*/
+.city {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dotted rgba(38, 56, 73, 0.5);
+  padding: 15px 5px;
+}
+.city:last-child {
+  border: none;
+}
+.time {
+  justify-content: left;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+}
+.time small {
+  font-size: 18px;
+  vertical-align: middle;
+}
+/*footer*/
+footer {
+  padding: 10px;
+  text-align: center;
+  color: rgb(240, 236, 236);
+  background-color: black;
+}
+
+a {
+  color: rgb(53, 188, 191);
+}
+a:hover {
+  color: rgba(144, 246, 215, 0.9);
+}
