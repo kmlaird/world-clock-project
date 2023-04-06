@@ -1,3 +1,4 @@
+/*Homepage*/
 function updateTime() {
   //Berlin
   let berlinElement = document.querySelector(`#berlin`);
@@ -28,13 +29,15 @@ function updateTime() {
   );
 }
 
+/*select function updates */
 function updateCity(event) {
-  let cityTimeZone = event.target.value;
-  let cityName = cityTimeZone.replace(`_`, ` `).split(`/`)[1];
-  let cityDateTime = moment().tz(cityTimeZone);
+  function updateNewTime() {
+    let cityTimeZone = event.target.value;
+    let cityName = cityTimeZone.replace(`_`, ` `).split(`/`)[1];
+    let cityDateTime = moment().tz(cityTimeZone);
 
-  let citiesElement = document.querySelector(`#cities`);
-  citiesElement.innerHTML = `
+    let citiesElement = document.querySelector(`#cities`);
+    citiesElement.innerHTML = `
         <div class="city">
           <div>
             <h2>${cityName}</h2>
@@ -44,7 +47,12 @@ function updateCity(event) {
             `h:mm:ss`
           )} <small>${cityDateTime.format(`A`)}</small></div>
         </div>`;
+  }
+  updateNewTime();
+  setInterval(updateNewTime, 1000);
 }
+
+/*global function calls */
 updateTime();
 setInterval(updateTime, 1000);
 
