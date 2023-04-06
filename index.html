@@ -18,34 +18,38 @@
   <body>
     <div class="container">
       <h1>World Clocks</h1>
-      <select>
+      <select id="city">
         <option value="Select a city">Select a city...</option>
-        <option value="Berlin">Berlin</option>
-        <option value="Melbourne">Melbourn</option>
-        <option value="New York">New York</option>
-        <option value="Seattle">Seattle</option>
-        <option value="Tokyo">Tokyo</option>
+        <option value="current-location">Current Location</option>
+        <option value="Africa/Algiers">Algiers</option>
+        <option value="Europe/Amsterdam">Amsterdam</option>
+        <option value="Africa/Bamako">Bamako</option>
+        <option value="America/Cancun">Cancun</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="America/Vancouver">Vancouver</option>
       </select>
-      <div class="city" id="berlin">
-        <div>
-          <h2>Berlin 🇩🇪</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="berlin">
+          <div>
+            <h2>Berlin 🇩🇪</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-      <div class="city" id="melbourne">
-        <div>
-          <h2>Melbourne 🇦🇺</h2>
-          <div class="date"></div>
+        <div class="city" id="melbourne">
+          <div>
+            <h2>Melbourne 🇦🇺</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small></small></div>
         </div>
-        <div class="time"><small></small></div>
-      </div>
-      <div class="city" id="new-york">
-        <div>
-          <h2>New York 🇺🇸</h2>
-          <div class="date"></div>
+        <div class="city" id="new-york">
+          <div>
+            <h2>New York 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small></small></div>
         </div>
-        <div class="time"><small></small></div>
       </div>
     </div>
     <footer>
